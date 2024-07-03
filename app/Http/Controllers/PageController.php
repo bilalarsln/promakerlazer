@@ -16,9 +16,9 @@ class PageController extends Controller
 
     public function mainPage()
     {
-        $veri = new stdClass;
-        $veri -> product = Product::get(); 
-        return view('index',compact('veri')); 
+        $products = Product::all();
+        return view('index', ['products' => $products]);
+        
         
     }
 }
