@@ -77,7 +77,8 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="#about">Hemen Ara</a>
+      <a class="btn-getstarted" href="https://api.whatsapp.com/send?phone=5510775050&text=Merhaba, Lazer Kesim / 3d yazıcı hakkında bilgi almak istiyorum.">Hemen Ara</a>
+
 
     </div>
   </header>
@@ -249,44 +250,23 @@
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Card</li>
-            <li data-filter=".filter-branding">Web</li>
+            <li data-filter=".lazer">App</li>
+            <li data-filter=".ucd">Card</li>
+            <li data-filter=".diger">Web</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
+            @foreach($veri->product as $product)
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item {{$product->category}}">
+              <img src="{{$product->photo}}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4>{{$product->name}}</h4>
+                <p>{{$product->description}}</p>
+                <a href="{{$product->id}}" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="{{ route('portfoliodetail') }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="{{ route('portfoliodetail') }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="{{ route('portfoliodetail') }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-           
+            @endforeach
 
           </div><!-- End Portfolio Container -->
 
@@ -384,7 +364,7 @@
     </section><!-- /Team Section -->
 
 
-  
+
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -533,7 +513,7 @@
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-      <a href="https://bootstrapmade.com/">Dinamikod</a> tarafından yapılmıştır.
+        <a href="https://bootstrapmade.com/">Dinamikod</a> tarafından yapılmıştır.
       </div>
     </div>
 
@@ -542,27 +522,28 @@
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <a href="https://api.whatsapp.com/send?phone=5510775050&text=Merhaba, Lazer Kesim / 3d yazıcı hakkında bilgi almak istiyorum."
-  class="whatsapp-button" target="_blank">
-  <i class="fab fa-whatsapp"></i>
-</a>
+  <a href="https://api.whatsapp.com/send?phone=5510775050&text=Merhaba, Lazer Kesim / 3d yazıcı hakkında bilgi almak istiyorum." class="whatsapp-button" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
 
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-      var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-      (function () {
-        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = 'https://embed.tawk.to/6683ee759d7f358570d6248c/1i1plmulr';
-        s1.charset = 'UTF-8';
-        s1.setAttribute('crossorigin', '*');
-        s0.parentNode.insertBefore(s1, s0);
-      })();
-    </script>
-    <!--End of Tawk.to Script-->
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function() {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/6683ee759d7f358570d6248c/1i1plmulr';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
 
   <!-- Vendor JS Files -->
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
