@@ -49,30 +49,12 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#hero" class="active">Ana Sayfa</a></li>
+
           <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#portfolio">Ürünler</a></li>
           <li><a href="#team">Team</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">İletişim<img src="" alt="" srcset=""></a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -99,7 +81,7 @@
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-            <img src="img/hero-img.png" class="img-fluid animated" alt="">
+            <img src="img/home.svg" class="img-fluid animated" alt="">
           </div>
         </div>
       </div>
@@ -241,17 +223,17 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Ürünler</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>satışta olan ürünlerimiz aşağıda listelenmiştir.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
       <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
         <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".lazer">App</li>
-            <li data-filter=".ucd">Card</li>
-            <li data-filter=".diger">Web</li>
+            <li data-filter="*" class="filter-active">Tümü</li>
+            <li data-filter=".lazer">Lazer Mak.</li>
+            <li data-filter=".ucd">3d Printer</li>
+            <li data-filter=".diger">Diğer</li>
         </ul><!-- End Portfolio Filters -->
 
         <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
